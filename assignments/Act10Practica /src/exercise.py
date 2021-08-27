@@ -10,19 +10,18 @@
 #tiempo equivalente en segundos de dicho proceso.
 #escribe tu código abajo de esta línea
 def equivalente(h,m,s):
-    horasensegundos=h*60*60
-    minutosensegundos=m*60
-    tiempo=horasensegundos+minutosensegundos+s
+    tiempo=h*3600+m*60+s
     return tiempo
-
 
 def main():
     horas=int(input("Horas: "))
     minutos=int(input("Minutos: "))
     segundos=int(input("Segundos: "))
-    resultado=equivalente(horas,minutos,segundos)
-    print(resultado)
-    return resultado 
+    print ("El tiempo en segundos es: "+str(equivalente(horas,minutos,segundos)))
+
+
+
+
 
     
 
